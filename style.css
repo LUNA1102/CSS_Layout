@@ -1,0 +1,56 @@
+body {
+    margin: 0;
+}
+
+h1, p {
+    margin: 0;
+}
+
+.container {
+    /* max-width: 1000px;
+    margin: 0 auto; */
+    /* margin-left: auto;
+    margin-right: auto; */
+    /* 최대값이 넘어갈 경우 폭에 제한 남은 여백 자동으로 나눠가짐 */
+    /* font-size: 0; */
+    /* section과 section 사이 공백 문자 때문에 100%가 넘어감으로 0으로 초기화한 다음 item에서 font-size: 1rem으로 복귀 */
+    background: pink;
+}
+
+.item {
+    /* float: left; */
+    /* display: inline-block; */
+    /* vertical-align: top; */
+    padding: 5%;
+    /* font-size: 1rem; */
+}
+
+.item-a {
+    /* width: 30%; */
+    background-color: yellow;
+}
+
+.item-b {
+    /* width: 50%; */
+    background-color: yellowgreen;
+}
+
+@media screen and (min-width: 700px) {
+    .container {
+        font-size: 0;
+    }
+
+    .item {
+        display: inline-block;
+        vertical-align: top;
+        font-size: 1rem;
+    }
+
+    .item-a {
+        width: 30%;
+    }
+
+    .item-b {
+        width: 50%;
+    }
+}
